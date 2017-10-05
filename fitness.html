@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link href="styleinfo.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One" rel="stylesheet">
+   <title>Fitness Info</title>
+</head>
+
+<body>
+    <div class="pic">
+  <a href="index.html">  <img src="./img/logo.jpg" style="width:4em; height:4em;" alt="logo">
+    </div>
+
+  <header>
+   <h1>Woothie</h1></a>
+   <h2>Smoothies til fitness</h2>
+<!--yderste lag-->
+<div id=mynav class=navi>
+
+  <!-- knap til at lukke nav-->
+  <a href="javascript:void(0)" class="closebut" onclick="closeNav()">&times;</a>
+
+  <!--indhold i yderste lag-->
+  <div class="overlayer">
+    <a href="index.html">Home</a>
+    <a href="produktfitness.html">Fitness Smoothies</a>
+    <a href="fitness.html">- Produkt Info</a>
+    <a href="produktfamily.html">Familie Smoothies</a>
+    <a href="familie.html">- Produkt Info</a>
+    <a href="omos.html">Om Woothie</a>
+  </div>
+
+</div>
+<!--open nav-->
+<span onclick="openNav()">☰</span>
+</header>
+
+<!-- javascript til at åbne menuen, når der klikkes på ☰-->
+<script>
+function openNav(){
+  document.getElementById("mynav").style.width = "100%";
+}
+/*javascript til at lukke menuen når der trykkes på x */
+function closeNav(){
+  document.getElementById("mynav").style.width = "0%";
+}
+
+</script>
+
+
+<main>
+
+    <article>
+<img src="./img/yellow.png" alt="yellow">
+    <h3>No. 1. Gul Booster</h3>
+
+    <div class="smoothieinfo">
+    <p>Denne gule vitamin-indsprøjtning består af banan, mango, appelsin og æble. Den er enormt rig på antioxidanter, jern og kalium og kvikker humøret! Både mangoen og de friske appelsiner indeholder store mængder A-, B- og C-vitamin. I denne variant er der tilføjet ekstra protein i form af valleprotein-isolat, så du har endnu nemmere ved at nå dine daglige mål. </p>
+    </div>
+    </article>
+
+
+    <article>
+<img src="./img/lightred.png" alt="lightred">
+    <h3 class="pink">No. 2. Pink Dragon</h3>
+
+    <div class="smoothieinfo2">
+    <p>Den farveglade smoothie er for dig der ikke er bange for at prøve nogle nye frugter og smage. Denne smoothie indeholder nemlig både pink dragefrugt, guanabana, banan og æble. Smoothien er rig på omega 3-fedtsyrer og har et lavt sukkerindhold. Der er også her tilføjet ekstra protein, til at fodre musklerne.</p>
+    </div>
+    </article>
+
+
+        <article>
+<img src="./img/g.png" alt="green">
+    <h3 class="green">No. 3. Grøn Hulker</h3>
+
+    <div class="smoothieinfo3">
+    <p>Vores bomstærke grønne smoothie med både spinat, æble, ingefær, banan, matcha og grønkål. Heri er der både frugter og grøntsager, der gør det ekstra nemt at få godt med grønt i løbet af dagen. Smoothien er fyldt med antioxidanter og utrolig rig på K-vitamin. Samtidig styrker det både imunforsvar og muskler. Også ingefær og matcha har mange sundhedsmæssige fordele. + Ekstra protein.</p>
+    </div>
+    </article>
+
+        <article>
+<img src="./img/red.png" alt="red">
+    <h3 class="red">No. 4. 4 Berries</h3>
+
+    <div class="smoothieinfo4">
+    <p>Indeholder både brombær, hindbær, blåbær og solbær. Udover de sunde antioxidanter er de fleste bær sprængfyldt med B-, C- og E-vitaminer, ligesom de er rige på kostfibre og mineraler som magnesium, kalium, fosfor og jern. Og så er det vigtigt at du husker at vælge bær fra hele farvepaletten, da bærrenes farvestoffer også er de sunde stoffer. + Ekstra protein.</p>
+    </div>
+    </article>
+
+</main>
+
+<footer>
+  <p>&copy; Woothie 2017 - All Rights Reserved <a href="http://www.facebook.com" target="_blank"><img src="img/facebook-icon.png" alt="facebook-logo"></a></p>
+</footer>
+
+</body>
+</html>

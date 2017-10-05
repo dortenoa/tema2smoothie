@@ -1,0 +1,835 @@
+*{
+  box-sizing: border-box;
+}
+
+/*menuen starter her*/
+/*hvordan overlayet ser ud nÃ¥r det kommer frem*/
+.navi{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+/*hvordan ser indholdet ud i hamburgermenuen*/
+.overlayer{
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: left;
+  padding-left: 20%;
+  font-size: 10%;
+  margin-top: 30px;
+  font-family: 'Varela Round', sans-serif;
+}
+/*hvordan linkene ser ud i overlay*/
+.navi a{
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+/*giver farve nÃ¥r der holdes over indholdet*/
+.navi a:hover .navi a:focus{
+  color: #f1f1f1;
+}
+/*position af x/lukke knappen i menuen*/
+.navi .closebut{
+  position: absolute;
+  top: 15px;
+  right: 5%;
+  padding: 0;
+  font-size: 60px;
+}
+span{
+  position: absolute;
+  right: 5%;
+  margin-top: 20px;
+  font-size: 2.5em;
+  color: #07395a;
+  cursor: pointer;
+}
+/*menuen slutter her*/
+
+/*køb knappen start*/
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgba(255,255,255,0.5);
+  border: 1px solid;
+  color: Black;
+  text-align: center;
+  font-size: 40%;
+  padding:0;
+  width: 70%;
+  height: 10%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 15%;
+}
+
+.button span {
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  text-align: center;
+  margin: 0;
+  padding: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*køb knappen slut*/
+
+/*forside starter her*/
+
+#jon {
+  max-width: 100%;
+  margin: 0;
+}
+
+#jon header {
+  height: 98px;
+  padding: 0;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #07395a;
+  margin: 0;
+}
+
+#jon header #header {
+  height: 98px;
+}
+
+#jon header #header img {
+  height: 90%;
+  padding: 8px 0 0 5%;
+  margin: 0;
+  float: left;
+}
+
+#jon header #header h1 {
+  padding: 25px 0 0 5px;
+  margin: 0;
+  float: left;
+  font-family: 'Bowlby One', cursive, sans-serif;
+  color: #07395a;
+  font-size: 2em;
+}
+
+#jon main {
+  margin: 0;
+  padding-top: 32px;
+  height: 440px;
+  padding-bottom: 54px;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 100%), url(img/baggrund.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#jon main section {
+  width: 90%;
+  height: 45%;
+  padding: 8px 0;
+  margin: auto;
+  margin-top: 16px;
+  background-color: rgba(255,255,255,0.5);
+}
+
+#jon main section img {
+  height: 100%;
+  display: block;
+  margin: auto;
+}
+
+#jon footer {
+  padding: 0;
+  border-top: solid 1px lightgrey;
+  margin: 0;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 34px;
+}
+
+#jon footer p {
+  text-align: center;
+  font-size: 0.75em;
+  color: #07395a;
+}
+#jon footer p a img {
+  width: 20px;
+  margin-left: 1%;
+}
+
+/*forside slutter her */
+
+/*produkt familie siden*/
+#dorte {
+  max-width: 100%;
+  margin: 0;
+}
+
+#dorte header {
+  height: 78px;
+  padding: 0;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #07395a;
+  margin: 0;
+}
+
+#dorte header img {
+  height: 100%;
+  padding: 8px 0 0 5%;
+  margin: 0;
+  float: left;
+}
+
+#dorte h1 {
+  padding: 25px 0 0 5px;
+  margin: 0;
+  float: left;
+  font-family: 'Bowlby One', cursive, sans-serif;
+  color: #07395a;
+  font-size: 2em;
+}
+
+#dorte main {
+  margin: 0;
+  margin-left: 15%;
+  width: 70%;
+  padding-top: 32px;
+  /*height: 440px;*/
+  /*padding-bottom: 54px;*/
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 100%), url(img/limebg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#dorte main /*section*/ img {
+  /*height: 100%;*/
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+  width: 70%;
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#dorte footer {
+  padding: 0;
+  border-top: solid 1px lightgrey;
+  margin: 0;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 34px;
+
+}
+
+#dorte footer p {
+  text-align: center;
+  font-size: 0.75em;
+  color: #07395a;
+  font-family: 'Varela Round', sans-serif;
+}
+#dorte footer p a img {
+  width: 20px;
+  margin-left: 1%;
+}
+
+/*side produkt familie slut*/
+
+/*produkt fitness side*/
+
+#mikkel {
+  max-width: 100%;
+  margin: 0;
+}
+
+#mikkel header {
+  height: 78px;
+  padding: 0;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #07395a;
+  margin: 0;
+}
+
+#mikkel header img {
+  height: 100%;
+  padding: 8px 0 0 5%;
+  margin: 0;
+  float: left;
+}
+
+#mikkel h1 {
+  padding: 25px 0 0 5px;
+  margin: 0;
+  float: left;
+  font-family: 'Bowlby One', cursive, sans-serif;
+  color: #07395a;
+  font-size: 2em;
+}
+
+#mikkel main{
+  margin: 0;
+  margin-left: 15%;
+  width: 70%;
+  padding-top: 32px;
+  /*height: 440px;*/
+  /*padding-bottom: 54px;*/
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 100%), url(img/citrusbg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#mikkel main /*section*/ img {
+  /*height: 100%;*/
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+    width: 70%;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#mikkel footer {
+  padding: 0;
+  border-top: solid 1px lightgrey;
+  margin: 0;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 34px;
+}
+
+#mikkel footer p {
+  text-align: center;
+  font-size: 0.75em;
+  color: #07395a;
+  font-family: 'Varela Round', sans-serif;
+}
+#mikkel footer p a img {
+  width: 20px;
+  margin-left: 1%;
+}
+/*produkt fitness side slut*/
+
+/*info siderne start*/
+
+/*info siderne slut*/
+
+/*Billed kompensation*/
+.famsm {
+  /*background-color: #ffcce0;*/
+  display: inline-block;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-left: 2%;
+  background-color: rgba(255,255,255,0.5);
+  /*z-index: 1;*/
+}
+.famsm h2 {
+  font-size: 150%;
+  font-family: 'Varela Round', sans-serif;
+}
+.flex-item h3 {
+  font-family: 'Varela Round', sans-serif;
+}
+.flex-item p {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 80%;
+}
+
+.flex-container {
+    /*display: -webkit-flex;*/
+    display: flex;
+    width: 100%;
+    height: auto;
+    /*flex-wrap: wrap;*/
+    text-align: center;
+    /*background-color: lightgrey;*/
+    justify-content: space-around;
+}
+
+.flex-item img {
+  width: 100%; /*vigtigt billedestørrelse så de tilpasser sig screen*/
+  text-align: center;
+}
+
+.flex-item {
+    /*background-color: cornflowerblue;*/
+    margin-top: 5%;
+    width: 100%;
+    height: 100%;
+    margin: 5%;
+}
+/*billed kompentasion slut*/
+
+/*om vores virksomhed start*/
+#sandra {
+  max-width: 100%;
+  margin: 0;
+}
+
+#sandra header {
+  height: 78px;
+  padding: 0;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #07395a;
+  margin: 0;
+}
+
+#sandra header div {
+  height: 78px;
+}
+
+#sandra header div img {
+  height: 90%;
+  padding: 8px 0 0 5%;
+  margin: 0;
+  float: left;
+}
+
+#sandra header div h1 {
+  padding: 25px 0 0 5px;
+  margin: 0;
+  float: left;
+  font-family: 'Bowlby One', cursive, sans-serif;
+  color: #07395a;
+  font-size: 2em;
+}
+
+/*menuen starter her*/
+
+#sandra header div .navi { /*hvordan overlayet ser ud når det kommer frem*/
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+#sandra header div .navi .overlayer { /*hvordan ser indholdet ud i menuen*/
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#sandra header div .navi a { /*hvordan linkene ser ud i overlay*/
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+#sandra header div .navi a:hover #sandra header div .navi a:focus { /*giver farve når der holdes over indholdet*/
+  color: #f1f1f1;
+}
+
+#sandra header div .navi .closebut { /*position af x/lukke knappen i menuen*/
+  position: absolute;
+  top: 15px;
+  right: 5%;
+  padding: 0;
+  font-size: 60px;
+}
+
+#sandra header div span {
+  position: absolute;
+  right: 5%;
+  margin-top: 20px;
+  font-size: 2.5em;
+  color: #07395a;
+  cursor: pointer;
+}
+
+/*menuen slutter her*/
+
+#sandra main {
+  margin: 0;
+  padding-top: 32px;
+  height: 440px;
+  padding-bottom: 54px;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 100%), url(img/smoothie-fruit.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#sandra .omwoothie h2 {
+color: #07395a;
+text-align: left;
+font-family: 'Varela Round', sans-serif;
+font-size: 150%;
+padding-left: 5%;
+}
+
+#sandra article {
+  color: #07395a;
+  /*font-size: 2.5em;*/
+  padding-left: 5%;
+  /*margin-left: 34%;*/
+  padding-top:0;
+  height: auto;
+  /*font-size:40%;*/
+  width: 90%;
+}
+
+#sandra article p{
+font-family: 'Varela Round', sans-serif;
+background-color: rgba(255,255,255,0.5);
+f/*ont-size:250%;
+width: 90%;
+padding: 8px 8px;
+margin: auto;
+margin-top: 16px;*/
+}
+
+#sandra main section {
+  width: 90%;
+  height: 450px;
+  padding: 8px 0;
+  margin: auto;
+  margin-top: 16px;
+  background-color: rgba(255,255,255,0.5);
+
+}
+
+#sandra main section img {
+  height: 100%;
+  display: block;
+  margin: auto;
+}
+
+#sandra footer {
+  padding: 0;
+  border-top: solid 1px lightgrey;
+  margin: 0;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 34px;
+}
+
+#sandra footer p {
+  text-align: center;
+  font-size: 0.75em;
+  color: #07395a;
+}
+#sandra footer p a img {
+  width: 20px;
+  margin-left: 1%;
+}
+
+/*om vores virksomhed slut*/
+
+@media screen and (min-width: 580px) {
+
+/*forside starter her*/
+#jon header img {
+  padding-left: 7%;
+}
+
+#jon header h1 {
+  padding-left: 10px;
+}
+
+span {
+  right: 8%;
+}
+
+.navi .closebut {
+  right: 8%;
+}
+
+#jon main {
+  height: 750px;
+}
+
+#jon main section {
+  float: left;
+  width: 40%;
+}
+
+#jon main section:first-child {
+  margin: 25% 5% 0 7%;
+}
+
+#jon main section:last-child {
+  margin-top: 25%;
+}
+
+#jon main section img {
+  height: 60%;
+  margin-top: 20%;
+}
+
+/*forside slutter her*/
+
+/*familie produkt side start*/
+  #dorte header img {
+    padding-left: 7%;
+  }
+
+  #dorte header h1 {
+    padding-left: 10px;
+  }
+
+  span {
+    right: 8%;
+  }
+
+  .navi .closebut {
+    right: 8%;
+  }
+
+  #dorte main {
+    height: auto;
+  }
+
+  #dorte main section {
+    float: left;
+    width: 40%;
+  }
+
+  #dorte main section:first-child {
+    margin: 25% 5% 0 7%;
+  }
+
+  #dorte main section:last-child {
+    margin-top: 25%;
+  }
+
+  #dorte main section img {
+    height: 60%;
+    margin-top: 20%;
+  }
+  .flex-container {
+      /*display: -webkit-flex;*/
+      display: flex;
+      width: 100%;
+      height: auto;
+      /*flex-wrap: wrap;*/
+      text-align: center;
+      /*background-color: lightgrey;*/
+      justify-content: space-around;
+  }
+/*familie produkt side slut*/
+
+/*fitness produkt start*/
+#mikkel header img {
+  padding-left: 7%;
+}
+
+#mikkel header h1 {
+  padding-left: 10px;
+}
+
+span {
+  right: 8%;
+}
+
+.navi .closebut {
+  right: 8%;
+}
+
+#mikkel main {
+  height: auto;
+}
+
+#mikkel main section {
+  float: left;
+  width: 40%;
+}
+
+#mikkel main section:first-child {
+  margin: 25% 5% 0 7%;
+}
+
+#mikkel main section:last-child {
+  margin-top: 25%;
+}
+
+#mikkel main section img {
+  height: 60%;
+  margin-top: 20%;
+}
+/*fitness produkt slut*/
+
+/*om vores virksomhed start*/
+#sandra header h1 {
+  padding-left: 110px;
+}
+
+#sandra main {
+  height: auto;
+}
+
+#sandra main section {
+  float: left;
+  width: 40%;
+}
+
+#sandra main section:first-child {
+  margin: 25% 5% 0 7%;
+}
+
+#sandra main section:last-child {
+  margin-top: 25%;
+}
+
+#sandra main section img {
+  height: 60%;
+  margin-top: 20%;
+}
+}
+/*om vores virksomhed slut*/
+
+@media screen and (max-width: 880px) {
+  .flex-container {
+      /*display: -webkit-flex;*/
+      display: flex;
+      width: 100%;
+      height: auto;
+      flex-wrap: wrap;
+      text-align: center;
+      /*background-color: lightgrey;*/
+      justify-content: space-around;
+  }
+  .flex-item {
+      /*background-color: cornflowerblue;*/
+      margin-top: 5%;
+      width: 35%;
+      height: auto;
+      margin: 5%;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+/*forside starter her*/
+#jon header #header {
+  max-width: 960px;
+  margin: auto;
+}
+
+#jon header #header img {
+  padding-left: 0;
+}
+
+#jon header #header span {
+  position: relative;
+  right: 0;
+  float: right
+}
+
+#jon main {
+  max-width: 960px;
+  height: 520px;
+  padding-top: 0;
+  margin: auto;
+}
+
+#jon main section {
+  margin: auto;
+}
+
+#jon main section img {
+  margin: auto;
+  margin-top: 5%;
+  height: 90%;
+}
+
+/*forside slutter her*/
+
+/*familie produkt start*/
+  #dorte main {
+    max-width: 960px;
+    height: auto;
+    margin: auto;
+  }
+
+  #dorte main section {
+    margin: auto;
+  }
+
+  #dorte main section img {
+    margin: auto;
+    margin-top: 5%;
+    height: 90%;
+  }
+
+/*familie produkt slut*/
+
+/*fitness produkt start*/
+
+#mikkel main {
+  max-width: 960px;
+  height: auto;
+  margin: auto;
+}
+
+#mikkel main section {
+  margin: auto;
+}
+
+#mikkel main section img {
+  margin: auto;
+  margin-top: 5%;
+  height: 90%;
+  }
+
+/*fitness produkt slut*/
+
+/* om vores virksomhed*/
+#sandra main {
+  max-width: 960px;
+  height: auto;
+  margin: auto;
+}
+
+}
+/*om vores virksomhed slut*/

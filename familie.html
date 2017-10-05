@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link href="styleinfo.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One" rel="stylesheet">
+   <title>Familie Info</title>
+</head>
+
+<body>
+        <div class="pic">
+      <a href="index.html">  <img src="./img/logo.jpg" style="width:4em; height:4em;" alt="logo">
+        </div>
+
+      <header>
+       <h1>Woothie</h1></a>
+<!--yderste lag-->
+<div id=mynav class=navi>
+
+  <!-- knap til at lukke nav-->
+  <a href="javascript:void(0)" class="closebut" onclick="closeNav()">&times;</a>
+
+  <!--indhold i yderste lag-->
+  <div class="overlayer">
+    <a href="index.html">Home</a>
+    <a href="produktfitness.html">Fitness Smoothies</a>
+    <a href="fitness.html">- Produkt Info</a>
+    <a href="produktfamily.html">Familie Smoothies</a>
+    <a href="familie.html">- Produkt Info</a>
+    <a href="omos.html">Om Woothie</a>
+  </div>
+
+</div>
+<!--open nav-->
+<span onclick="openNav()">☰</span>
+</header>
+
+<!-- javascript til at åbne menuen, når der klikkes på ☰-->
+<script>
+function openNav(){
+  document.getElementById("mynav").style.width = "100%";
+}
+/*javascript til at lukke menuen når der trykkes på x */
+function closeNav(){
+  document.getElementById("mynav").style.width = "0%";
+}
+
+</script>
+
+<main>
+
+    <h2>Smoothies til familier</h2>
+
+    <article>
+<img src="./img/yellow.png" alt="yellow">
+    <h3>No. 1. Banana Py</h3>
+
+    <div class="smoothieinfo">
+    <p>En lækker gul vitaminbombe med banan, mango, appelsin og æble. Udover at være god abemad, bidrager bananen i smoothies både til humøret, beskytter mod type 2 diabetes og er rig på antioxidanter, jern og kalium. Mangoen har både et højt indhold af både A-, B- og C-vitamin med sig, og også de friskpressede appelsiner bidrager med en masse C-vitamin der styrker imunforsvaret.</p>
+    </div>
+    </article>
+
+
+    <article>
+<img src="./img/lightred.png" alt="lightred">
+    <h3 class="pink">No. 2. Pink Panda</h3>
+
+    <div class="smoothieinfo2">
+    <p>Smoothie med pink dragefrugt, guanabana, banan og æble. Udover sin flotte farve, er den med sit indhold af dragefrugt, rig på omega 3-fedtsyrer, og så er sukkerindholdet i frugten lavt. Æblerne bidrager også til mæthedsfornemmelse med sit store indhold af fibre. Indgredienserne er derudover også udvalgt til nemt at prøve nogle nye lækre og specielle frugter som både ens børn og sig selv vil få glæde af.</p>
+    </div>
+    </article>
+
+        <article>
+<img src="./img/g.png" alt="grøn">
+    <h3 class="green">No. 3. Skippy Skræk</h3>
+
+    <div class="smoothieinfo3">
+    <p>Vores grønneste smoothie med både spinat, æble, ingefær, banan, matcha og grønkål. Indholdet af antioxidanter i de grønne blade er tårnhøjt, og derudover er spinat er også både yderst kaloriefattigt, blodsukkervenligt og utrolig rig på K-vitamin. Samtidig styrker det både imunforsvar og muskler. Også ingefær og matcha har mange sundhedsmæssige fordele. </p>
+    </div>
+    </article>
+
+        <article>
+<img src="./img/red.png" alt="red">
+    <h3 class="red">No. 4. Vampyr Hætte</h3>
+
+    <div class="smoothieinfo4">
+    <p>Indeholder både brombær, hindbær, blåbær og solbær. Udover de sunde antioxidanter er de fleste bær sprængfyldt med B-, C- og E-vitaminer, ligesom de er rige på kostfibre og mineraler som magnesium, kalium, fosfor og jern. Og så er det vigtigt at du husker at vælge bær fra hele farvepaletten, da bærrenes farvestoffer også er de sunde stoffer.</p>
+    </div>
+    </article>
+
+</main>
+
+<footer>
+  <p>&copy; Woothie 2017 - All Rights Reserved <a href="http://www.facebook.com" target="_blank"><img src="img/facebook-icon.png" alt="facebook-logo"></a></p>
+</footer>
+
+</body>
+</html>

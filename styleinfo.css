@@ -1,0 +1,170 @@
+*{
+    box-sizing: border-box;
+}
+
+/*menuen starter her*/
+/*hvordan overlayet ser ud når det kommer frem*/
+body{
+    width: 100%;
+}
+.navi{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+/*hvordan ser indholdet ud i menuen*/
+.overlayer{
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+/*hvordan linkene ser ud i overlay*/
+.navi a{
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+/*giver farve når der holdes over indholdet*/
+.navi a:hover .navi a:focus{
+  color: #f1f1f1;
+}
+/*position af x/lukke knappen i menuen*/
+.navi .closebut{
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+span{
+  position: absolute;
+  right: 5%;
+  top: 0%;
+  margin-top: 20px;
+  font-size: 2.5em;
+  color: #07395a;
+  cursor: pointer;
+}
+
+/*menuen slutter her*/
+
+/* style overskrifter */
+h1 {
+    font-family: 'Bowlby One', cursive, sans-serif;;
+    color: #07395a;
+    font-size: 2em;
+    font-weight: bolder;
+    display: block;
+    margin: 5px;
+    padding-top: 10px;
+}
+
+h2 {
+    font-family: 'Varela Round';
+    color: #07395a;
+    opacity: 0.5;
+    margin: 30px;
+    font-size: 30px;
+    border-bottom: 1px solid black;
+}
+
+/* smooothie images */
+article img {
+    width: 30%;
+    float: left;
+}
+
+/* tekst til hver smoothie */
+.smoothieinfo, .smoothieinfo2, .smoothieinfo3, .smoothieinfo4 {
+    color: black;
+    width: 95%;
+    font-family: 'Varela Round';
+    font-weight: 300;
+}
+
+/* smoothie overskrifter */
+h3 {
+    color: #f39e06;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.pink {
+    color: #da4253;
+}
+
+.green {
+    color: #003500;
+}
+
+.red {
+    color: #661720;
+}
+
+/* woothie float */
+.pic {
+    float: left;
+    padding-right: 10px;
+    margin-left: 5%;
+}
+
+footer {
+    text-align: center;
+    margin-top: 75px;
+    height: auto;
+    clear: both;
+}
+footer p a img {
+  width: 20px;
+  margin-left: 1%;
+}
+
+
+article {
+    clear: both;
+}
+
+body {
+    margin: 0;
+}
+
+/* background image style */
+main {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    background-position: center;
+    background-image: linear-gradient(to top, rgba(255,255,255,0) 0%, rgba(255,255,255, 0.8) 100%),
+    linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255, 0.8) 100%), url(img/baggrundinfo.jpg);
+}
+
+@media screen and (min-width: 450px) {
+    main {
+        max-width: 960px;
+        margin: auto;
+    }
+
+    main img {
+    width: 20%;
+
+    }
+    .smoothieinfo, .smoothieinfo2, .smoothieinfo3, .smoothieinfo4 {
+    color: black;
+    width: 60%;
+    font-family: 'Varela Round';
+    font-weight: 300;
+    overflow-y: hidden;
+    }
+}

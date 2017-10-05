@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Fitness Smoothies</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Bowlby+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body id="mikkel">
+  <header id="header">
+    <a href="index.html"><img src="./img/logo.jpg" alt="woothie logo">
+    <h1>Woothie</h1></a>
+    <!--yderste lag-->
+    <div id=mynav class=navi>
+
+  <!-- knap til at lukke nav-->
+      <a href="javascript:void(0)" class="closebut" onclick="closeNav()">&times;</a>
+
+  <!--indhold i yderste lag-->
+  <div class="overlayer">
+    <a href="index.html">Home</a>
+    <a href="produktfitness.html">Fitness Smoothies</a>
+    <a href="fitness.html">- Produkt Info</a>
+    <a href="produktfamily.html">Familie Smoothies</a>
+    <a href="familie.html">- Produkt Info</a>
+    <a href="omos.html">Om Woothie</a>
+  </div>
+
+</div>
+<!--open nav-->
+<span onclick="openNav()">☰</span>
+
+  </header>
+
+  <main>
+    <div class="famsm">
+      <h2>Fitness Smoothies</h2>
+    </div>
+    <div class="flex-container">
+      <div class="flex-item"><img src="./img/pink-woothie-familie.png" alt="pink panther"height="162" width="58">
+          <button class="button" style="vertical-align:middle"><span>Køb</span></button>
+        <figcaption><h3>Pink Dragon.</h3><p>Rig på antioxidanter med dragonfrugt, guanabana og æble.</p></figcaption>
+      </div>
+      <div class="flex-item"><img src="./img/red-woothie-familie.png" alt="De Utrolige" height="162" width="58">
+          <button class="button" style="vertical-align:middle"><span>Køb</span></button>
+      <figcaption><h3>4 Berries.</h3><p>Mineral boost med granatæble, blåbær og hindbær.</p></figcaption>
+    </div>
+      <div class="flex-item"><img src="./img/gul-woothie-familie.png" alt="Bananer i pyjamas" height="168" width="58">
+          <button class="button" style="vertical-align:middle"><span>Køb</span></button>
+      <figcaption><h3>Gul Booster.</h3><p>Vitamin insprøjtning med banan, mango og passionsfrugt.</p></figcaption>
+    </div>
+      <div class="flex-item"><img src="./img/green-woothie-familie.png" alt="skipper skræk" height="162" width="58">
+          <button class="button" style="vertical-align:middle"><span>Køb</span></button>
+    <figcaption><h3>Grøn Hulker.</h3><p>Stærke knogler og muskler med Æble, spinat og ingefær.</p></figcaption></div>
+    </div>
+</main>
+
+<footer>
+  <p>&copy; Woothie 2017 - All Rights Reserved <a href="http://www.facebook.com" target="_blank"><img src="img/facebook-icon.png" alt="facebook-logo"></a></p>
+</footer>
+  <!-- javascript til at åbne menuen, når der klikkes på ☰-->
+<script>
+function openNav(){
+  document.getElementById("mynav").style.width = "100%";
+}
+/*javascript til at lukke menuen når der trykkes på x */
+function closeNav(){
+  document.getElementById("mynav").style.width = "0%";
+}
+
+</script>
+
+</body>
+</html>
